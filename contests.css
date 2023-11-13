@@ -1,0 +1,152 @@
+:root {
+  --heading-offset: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  position: relative;
+  overflow-x: hidden;
+}
+.styrate-heading {
+  color: #464040;
+  font-size: 1.1rem;
+  margin-left: var(--heading-offset);
+}
+
+.top-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  height: 10%;
+}
+
+.top-options .top-icons {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+}
+.top-icons {
+  gap: 8px;
+}
+
+.top-icons object {
+  width: 25px;
+}
+
+.main-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.page-title {
+  margin: 0;
+  margin-left: var(--heading-offset);
+  font-weight: 600;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem !important;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 10px 20px 10px 20px;
+  /* border: black; */
+}
+
+.card-content {
+  width: 100%;
+  text-align: center;
+}
+
+.card object {
+  width: 40%;
+  height: 40%;
+  /* margin-top: 10px; */
+}
+
+.section-title {
+  margin-left: var(--heading-offset);
+}
+
+.contest-content {
+  padding: 0 5px 0 5px;
+}
+.card-row {
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px;
+  gap: 20px;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.page-footer {
+  display: flex;
+  position: fixed;
+  bottom: 91.5px;
+  z-index: 1000;
+  width: 344px;
+  backdrop-filter: blur(10px);
+  height: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  gap: 5px;
+  justify-content: space-evenly;
+}
+
+.page-footer .leaderboard-rank {
+  margin: 0;
+}
+
+.page-footer object {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-profile {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.platinum-content {
+  padding-bottom: 75px;
+}

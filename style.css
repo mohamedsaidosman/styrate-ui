@@ -1,0 +1,285 @@
+:root {
+  --heading-offset: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  position: relative;
+}
+.styrate-heading {
+  color: #464040;
+  font-size: 1.1rem;
+  margin-left: var(--heading-offset);
+}
+
+.top-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  height: 10%;
+}
+
+.top-options .top-icons {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+}
+.top-icons {
+  gap: 8px;
+}
+
+.top-icons object {
+  width: 25px;
+}
+
+.main-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.section-info {
+  display: flex;
+  padding: 0 10px 0 10px;
+  /* padding-bottom: 20px; */
+  justify-content: space-between;
+  align-items: center;
+}
+.page-title {
+  margin: 0;
+  margin-left: var(--heading-offset);
+  font-weight: 600;
+}
+
+.section-content {
+  padding: 0 10px 0 10px;
+  display: grid;
+  padding-bottom: 100px;
+  gap: 8px;
+  grid-row-gap: 50px;
+  /* place-items: center; */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-content-card {
+  position: relative;
+  width: fit-content;
+  /* padding-bottom: 5rem !important; */
+}
+
+.card-image {
+  width: 9rem;
+  height: 11rem;
+  border-radius: 4px;
+}
+
+.topic {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+}
+
+.card-profile {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  z-index: 10;
+}
+
+.card-profile img {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.card-name {
+  color: #fff;
+}
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 5%,
+    rgba(0, 0, 0, 0) 95%
+  );
+}
+.card-footer {
+  position: absolute;
+}
+.card-description {
+  margin-bottom: 0;
+}
+.card-description::after {
+  content: "2h ago";
+  margin-left: 7.5px;
+  color: grey;
+}
+.card-stats {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  margin: 0;
+  gap: 15px;
+  height: fit-content;
+  /* padding: 6px; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.card-stat {
+  display: flex;
+  gap: 2px;
+}
+.leaderboard {
+  padding-bottom: 4rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leaderboard-title {
+  margin-left: var(--heading-offset);
+}
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 30px;
+  margin-left: var(--heading-offset);
+}
+.leaderboard-display * {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 0;
+}
+
+.leaderboard img {
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #000; */
+  border-radius: 50%;
+}
+.leaderboard-profile-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.leaderboard-rank {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  width: fit-content;
+}
+
+.item-number {
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+.leaderboard-points {
+  display: flex;
+  flex-direction: column;
+}
+.leaderboard-points * {
+  margin: 0;
+}
+
+.leaderboard-points .sub-counter {
+  margin-right: 20px;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.leaderboard-points .sub-counter {
+  color: #333;
+}
+
+.leaderboard-points .point-counter {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.leaderboard-time {
+  color: grey;
+}
+
+.leaderboard-profile-name {
+  font-weight: 500;
+}
+
+.page-footer {
+  display: flex;
+  position: fixed;
+  bottom: 91.5px;
+  z-index: 1000;
+  width: 344px;
+  backdrop-filter: blur(10px);
+  height: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  gap: 5px;
+  justify-content: space-evenly;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.page-footer .leaderboard-rank {
+  margin: 0;
+}
+
+.page-footer object {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-profile {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
